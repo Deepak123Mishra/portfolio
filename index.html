@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Deepak Kumar Mishra | AI & ML Engineer | Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Deepak Kumar Mishra - AI & Machine Learning Undergraduate, Data Analyst, and Python Developer specializing in ML models, RAG systems, and data analytics." />
+  <meta name="keywords" content="Deepak Kumar Mishra, AI Engineer, Machine Learning, Data Analyst, Python, LangChain, UCER Prayagraj, Portfolio" />
+  <meta name="author" content="Deepak Kumar Mishra" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Deepak Kumar Mishra | AI & ML Engineer Portfolio" />
+  <meta property="og:description" content="AI & Machine Learning undergraduate with hands-on experience in Python, SQL, Machine Learning, and Data Analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Glow Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Deepak Kumar Mishra Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">DKM</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="logo-badge">AI/ML</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#playground" class="nav-link">AI Lab</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="Deepak_Kumar_Mishra_Resume.pdf" download="Deepak_Kumar_Mishra_Resume.pdf" class="btn btn-outline btn-sm resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+    
+    <!-- Hero Section (Full-Screen Landing) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="hero-badge">
+            <span class="status-pulse"></span>
+            <span>Available for AI/ML & Data Analyst Opportunities</span>
+          </div>
+
+          <!-- Greeting & Name -->
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hello, I'm</span>
+            <span class="gradient-text hero-name">Deepak Kumar Mishra</span>
+          </h1>
+
+          <!-- Dynamic Typing Headline -->
+          <div class="hero-roles">
+            <span class="role-static">Specialized in</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <!-- Brief Summary / Objective -->
+          <p class="hero-desc">
+            AI & Machine Learning undergraduate with hands-on expertise in <strong>Python</strong>, <strong>SQL</strong>, <strong>Machine Learning</strong>, and <strong>Data Analytics</strong>. Passionate about architecting impactful data-driven solutions, intelligent RAG pipelines, and automated analytics.
+          </p>
+
+          <!-- Quick Stats Highlights -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-number">7.3</span>
+              <span class="metric-label">B.Tech CGPA</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">4+</span>
+              <span class="metric-label">Certifications</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">2+</span>
+              <span class="metric-label">Hackathons</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">6+</span>
+              <span class="metric-label">ML & AI Projects</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            <a href="Deepak_Kumar_Mishra_Resume.pdf" target="_blank" class="btn btn-ghost">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>View Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/deepakmishra" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="Deepak on LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="Deepak on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Mishradeepak9322" target="_blank" rel="noopener noreferrer" class="social-link" title="LeetCode Profile" aria-label="Deepak on LeetCode">
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a href="mailto:deepakkumarhalia@gmail.com" class="social-link" title="Email Deepak" aria-label="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+919793789322" class="social-link" title="Call Deepak" aria-label="Phone Call">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <!-- Glow background effects -->
+            <div class="profile-glow-ring"></div>
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="profile.jpg" alt="Deepak Kumar Mishra" class="profile-img" id="profile-img" onerror="this.src='deepakpic.jpeg'" />
+                <div class="image-overlay-badge">
+                  <i class="fa-solid fa-brain"></i>
+                  <span>AI/ML Specialist</span>
+                </div>
+              </div>
+
+              <!-- Quick Info Card Footer -->
+              <div class="profile-info">
+                <div class="profile-name-row">
+                  <div>
+                    <h3 class="profile-name">Deepak Kumar Mishra</h3>
+                    <p class="profile-sub">UCER Prayagraj • 2023 - 2027</p>
+                  </div>
+                  <span class="verified-badge" title="Verified AI Engineer">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                </div>
+
+                <!-- Floating Code Badge -->
+                <div class="floating-tech-tags">
+                  <span class="mini-tag"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="mini-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                  <span class="mini-tag"><i class="fa-solid fa-chart-pie"></i> Power BI</span>
+                  <span class="mini-tag"><i class="fa-solid fa-robot"></i> Scikit-learn</span>
+                </div>
+
+                <!-- Contact Shortcut Strip -->
+                <div class="profile-contact-strip">
+                  <a href="mailto:deepakkumarhalia@gmail.com" class="strip-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>deepakkumarhalia@gmail.com</span>
+                  </a>
+                  <a href="tel:+919793789322" class="strip-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91-9793789322</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating floating accolade badges -->
+            <div class="floating-stat stat-1">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-text">
+                <span class="stat-title">IBM Certified</span>
+                <span class="stat-desc">AI Intern (Virtual)</span>
+              </div>
+            </div>
+
+            <div class="floating-stat stat-2">
+              <div class="stat-icon"><i class="fa-solid fa-cloud"></i></div>
+              <div class="stat-text">
+                <span class="stat-title">Oracle Cloud</span>
+                <span class="stat-desc">OCI AI Foundation</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Floating Scroll Indicator -->
+      <div class="hero-scroll-indicator">
+        <a href="#about" aria-label="Scroll to About Section">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-text">EXPLORE PORTFOLIO</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-user-astronaut"></i> Biography</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Bridging analytical thinking, statistical modeling, and applied AI systems to solve real-world problems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Career Narrative -->
+          <div class="about-narrative glass-panel">
+            <h3 class="panel-title">
+              <i class="fa-solid fa-compass-drafting"></i> My Journey & Vision
+            </h3>
+            <p>
+              I am an <strong>Artificial Intelligence & Machine Learning</strong> undergraduate currently pursuing my Bachelor of Technology at <strong>United College of Engineering and Research (UCER), Prayagraj</strong>.
+            </p>
+            <p>
+              With strong foundations in <strong>Python, SQL, Data Analytics, and Machine Learning algorithms</strong>, I focus on turning complex datasets into actionable business intelligence and functional AI systems. During my virtual internship with <strong>IBM</strong>, I designed and evaluated salary prediction algorithms that optimize HR compensation planning through regression modeling.
+            </p>
+            <p>
+              I thrive in high-paced competitive environments, having built an academic credential validation prototype for the <strong>Smart India Hackathon (SIH)</strong> and an SOS emergency response trigger for women’s safety at <strong>UHack4.0</strong>.
+            </p>
+            <p>
+              I am actively seeking an impactful <strong>Data Analyst or AI/ML Engineer role</strong> where I can solve critical challenges, engineer reliable machine learning workflows, and continuously advance alongside cutting-edge technologies.
+            </p>
+
+            <!-- Key Strengths Grid -->
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                  <h4>Machine Learning & AI</h4>
+                  <p>Supervised learning, regression, classification, RAG architecture, and GenAI models.</p>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <h4>Data Analytics & BI</h4>
+                  <p>Exploratory data analysis (EDA), data cleaning, Power BI dashboards, and SQL queries.</p>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-code-merge"></i></div>
+                <div>
+                  <h4>Software Engineering</h4>
+                  <p>Clean OOP architecture, relational DB integration (MySQL), FastAPI endpoints, and Tkinter GUI.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Details / Vitals Card -->
+          <div class="about-vitals">
+            
+            <div class="vitals-card glass-panel">
+              <h3 class="panel-title">
+                <i class="fa-solid fa-id-card"></i> Candidate Vitals
+              </h3>
+              
+              <ul class="vitals-list">
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-user"></i> Name:</span>
+                  <span class="vital-val">Deepak Kumar Mishra</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                  <span class="vital-val">B.Tech in CSE (Spec. AI & ML)</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-building-columns"></i> University:</span>
+                  <span class="vital-val">UCER, Prayagraj (AKTU)</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-chart-simple"></i> Academic CGPA:</span>
+                  <span class="vital-val badge-accent">7.3 CGPA</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-calendar-days"></i> Graduation:</span>
+                  <span class="vital-val">2027</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="vital-val">Prayagraj / Mirzapur, UP, India</span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                  <span class="vital-val"><a href="mailto:deepakkumarhalia@gmail.com">deepakkumarhalia@gmail.com</a></span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                  <span class="vital-val"><a href="tel:+919793789322">+91-9793789322</a></span>
+                </li>
+                <li class="vital-item">
+                  <span class="vital-label"><i class="fa-solid fa-language"></i> Languages:</span>
+                  <span class="vital-val">English, Hindi</span>
+                </li>
+              </ul>
+
+              <div class="vitals-action">
+                <button class="btn btn-outline btn-full copy-email-btn" id="copy-email-btn">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copy Email Address</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Soft Skills Pill Box -->
+            <div class="soft-skills-card glass-panel">
+              <h4 class="subpanel-title"><i class="fa-solid fa-heart-pulse"></i> Soft Skills & Competencies</h4>
+              <div class="tags-cloud">
+                <span class="tag-pill"><i class="fa-solid fa-stopwatch"></i> Time Management</span>
+                <span class="tag-pill"><i class="fa-solid fa-arrows-spin"></i> Adaptability</span>
+                <span class="tag-pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                <span class="tag-pill"><i class="fa-solid fa-comments"></i> Communication</span>
+                <span class="tag-pill"><i class="fa-solid fa-users"></i> Teamwork</span>
+                <span class="tag-pill"><i class="fa-solid fa-lightbulb"></i> Creativity</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Core Capabilities</span>
+          <h2 class="section-title">Technical Skills & Arsenal</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Technologies, libraries, and frameworks I leverage to extract insights, train models, and build intelligent products.
+          </p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-nav">
+          <button class="skill-tab-btn active" data-tab="all">All Stack</button>
+          <button class="skill-tab-btn" data-tab="languages">Languages</button>
+          <button class="skill-tab-btn" data-tab="aiml">AI & Data Science</button>
+          <button class="skill-tab-btn" data-tab="tools">Tools & Frameworks</button>
+          <button class="skill-tab-btn" data-tab="coursework">CS Fundamentals</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card glass-panel" data-category="languages">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Programming Languages</h3>
+                <p>Foundations of algorithmic problem solving & data queries</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 90%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-database"></i> SQL (MySQL / Postgres)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-brands fa-java"></i> Core Java</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 75%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-terminal"></i> C Programming</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 80%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: AI & Data Science -->
+          <div class="skill-category-card glass-panel" data-category="aiml">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3>AI & Data Science Ecosystem</h3>
+                <p>Data modeling, predictive analytics, & RAG workflows</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-robot"></i> Scikit-Learn</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 88%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-table"></i> Pandas & NumPy</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 90%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-chart-line"></i> Matplotlib & Seaborn</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-network-wired"></i> LangChain & LangGraph (RAG)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 80%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-layer-group"></i> Vector DBs (FAISS, ChromaDB)</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 78%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Frameworks -->
+          <div class="skill-category-card glass-panel" data-category="tools">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <div>
+                <h3>Tools & Frameworks</h3>
+                <p>Development environments, BI reporting, & delivery tools</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-chart-pie"></i> Power BI & Excel Analytics</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-brands fa-github"></i> Git, GitHub & VS Code</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 88%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-bolt"></i> FastAPI & Streamlit</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 82%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-desktop"></i> Python Tkinter & GUI</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-book-open"></i> Jupyter Notebooks</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Computer Science Fundamentals -->
+          <div class="skill-category-card glass-panel" data-category="coursework">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3>CS Coursework & Core</h3>
+                <p>Rigorous undergraduate engineering fundamentals</p>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming (OOP)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-database"></i> Database Management (DBMS)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Data Structures & Algorithms (DSA)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 80%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-diagram-project"></i> Computer Networks</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 78%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-info">
+                  <span class="skill-name"><i class="fa-solid fa-microchip"></i> Operating Systems</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="--target-width: 78%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience & Hackathons Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> Work & Achievements</span>
+          <h2 class="section-title">Experience & Hackathons</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Industry virtual internship experience and national hackathon participation.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: UHack4.0 Hackathon -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-hackathon"><i class="fa-solid fa-trophy"></i> Hackathon</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 02/2026</span>
+              </div>
+              <h3 class="timeline-title">UHack4.0 Hackathon</h3>
+              <h4 class="timeline-org">United College of Engineering and Research (UCER), Prayagraj</h4>
+              <p class="timeline-role"><strong>Team ID:</strong> UHK04125</p>
+              <p class="timeline-desc">
+                Engineered an intelligent <strong>SOS Emergency Trigger System for Women's Safety</strong>. Designed rapid alert escalation mechanisms connecting real-time geolocation with distress beacon dispatch to ensure instant intervention.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Emergency Dispatch</span>
+                <span class="mini-tag">Python</span>
+                <span class="mini-tag">Geolocation API</span>
+                <span class="mini-tag">Rapid Response</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: SIH Hackathon -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-hackathon"><i class="fa-solid fa-flag"></i> National Hackathon</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 09/2025</span>
+              </div>
+              <h3 class="timeline-title">SIH Hackathon (Smart India Hackathon)</h3>
+              <h4 class="timeline-org">UCER, Prayagraj Center</h4>
+              <p class="timeline-role"><strong>Project:</strong> Certification's & Validation of Academia</p>
+              <p class="timeline-desc">
+                Developed a verification architecture to authenticate academic credentials and student certificates against institutional records, reducing fraudulent claims and automating academic credential validation.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Academic Verification</span>
+                <span class="mini-tag">Database Validation</span>
+                <span class="mini-tag">Credential Security</span>
+                <span class="mini-tag">SIH</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: IBM AI Intern -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"><i class="fa-brands fa-ibm"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-internship"><i class="fa-solid fa-briefcase"></i> Internship</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 08/2025</span>
+              </div>
+              <h3 class="timeline-title">AI Intern (Virtual)</h3>
+              <h4 class="timeline-org">IBM</h4>
+              <p class="timeline-role"><strong>Project:</strong> Salary Prediction Model & HR Compensation Analytics</p>
+              <ul class="timeline-bullets">
+                <li>Employed <strong>Python, Scikit-learn, Pandas, NumPy, Matplotlib, and Seaborn</strong> to conduct exploratory data analysis on multifaceted corporate employee salary datasets.</li>
+                <li>Architected an AI/ML predictive regression pipeline to forecast compensation packages benchmarked on skill matrix, years of experience, educational pedigree, and geographic location.</li>
+                <li>Delivered actionable HR analytics to support competitive compensation planning, salary equity benchmarks, and data-driven talent retention.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="mini-tag">Scikit-learn</span>
+                <span class="mini-tag">Pandas</span>
+                <span class="mini-tag">NumPy</span>
+                <span class="mini-tag">Seaborn</span>
+                <span class="mini-tag">Regression Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: PBEL Virtual Internship via FSP -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"><i class="fa-solid fa-microchip"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-cert"><i class="fa-solid fa-award"></i> Training & Internship</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 08/2025</span>
+              </div>
+              <h3 class="timeline-title">PBEL Virtual Internship via FSP – AI</h3>
+              <h4 class="timeline-org">IBM SkillsBuild / Edunet</h4>
+              <p class="timeline-desc">
+                Completed an intensive 6-week project-based virtual internship focused on Artificial Intelligence workflows, data engineering pipelines, ethical AI concepts, and model evaluation techniques.
+              </p>
+              <div class="timeline-tags">
+                <span class="mini-tag">Artificial Intelligence</span>
+                <span class="mini-tag">IBM FSP</span>
+                <span class="mini-tag">Model Evaluation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-code-fork"></i> Engineered Solutions</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            A showcase of AI/ML systems, data analysis dashboards, and software applications built with modern engineering practices.
+          </p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filter-nav">
+          <button class="project-tab-btn active" data-filter="all">All Projects</button>
+          <button class="project-tab-btn" data-filter="aiml">AI & GenAI</button>
+          <button class="project-tab-btn" data-filter="analytics">Data Analytics</button>
+          <button class="project-tab-btn" data-filter="software">Software & Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: AI Medical Report Analyzer (From Resume) -->
+          <article class="project-card glass-panel" data-category="aiml">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-ai">
+                <i class="fa-solid fa-notes-medical thumb-icon"></i>
+                <div class="thumb-badge">Featured GenAI</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 06/2026</span>
+                <span class="badge-status">Completed</span>
+              </div>
+              <h3 class="project-title">AI Medical Report Analyzer</h3>
+              <p class="project-summary">
+                Intelligent RAG-powered healthcare assistant allowing patients & practitioners to upload medical PDF reports, extract clinical insights, and generate easy-to-understand summaries with contextual Q&A.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Gemini / Claude</span>
+                <span class="tech-pill">LangGraph</span>
+                <span class="tech-pill">LangChain</span>
+                <span class="tech-pill">RAG</span>
+                <span class="tech-pill">FAISS / ChromaDB</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Streamlit</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="medical-analyzer">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="#playground" class="btn btn-sm btn-outline">
+                  <i class="fa-solid fa-play"></i> Try Demo
+                </a>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI Salary Prediction & Compensation Forecasting (From IBM Internship) -->
+          <article class="project-card glass-panel" data-category="aiml analytics">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-salary">
+                <i class="fa-solid fa-money-bill-trend-up thumb-icon"></i>
+                <div class="thumb-badge">IBM Project</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 08/2025</span>
+                <span class="badge-status">ML Model</span>
+              </div>
+              <h3 class="project-title">AI Salary Prediction & HR Analytics</h3>
+              <p class="project-summary">
+                Supervised regression ML model forecasting employee salary bands based on skill proficiency, years of experience, education tier, and location to eliminate bias and optimize HR compensation planning.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">Seaborn</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="salary-predictor">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="#playground" class="btn btn-sm btn-outline">
+                  <i class="fa-solid fa-sliders"></i> Test Model
+                </a>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Employee Management System (From Resume) -->
+          <article class="project-card glass-panel" data-category="software">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-system">
+                <i class="fa-solid fa-users-gear thumb-icon"></i>
+                <div class="thumb-badge">Desktop App</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 04/08/2025</span>
+                <span class="badge-status">Desktop System</span>
+              </div>
+              <h3 class="project-title">Employee Management System</h3>
+              <p class="project-summary">
+                Robust CRUD desktop software featuring a modern Tkinter GUI and relational MySQL backend. Handles employee records, payroll data, department assignments, and search queries with transaction safety.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Tkinter GUI</span>
+                <span class="tech-pill">MySQL Database</span>
+                <span class="tech-pill">mysql-connector</span>
+                <span class="tech-pill">CRUD Operations</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="employee-system">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View Code on GitHub">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Women Safety SOS Emergency Trigger (From Hackathon) -->
+          <article class="project-card glass-panel" data-category="software aiml">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-sos">
+                <i class="fa-solid fa-triangle-exclamation thumb-icon"></i>
+                <div class="thumb-badge">UHack4.0</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 02/2026</span>
+                <span class="badge-status">Hackathon Prototype</span>
+              </div>
+              <h3 class="project-title">Women Safety SOS Emergency Alert</h3>
+              <p class="project-summary">
+                Rapid-action distress signaling architecture that detects emergency triggers and broadcasts high-precision GPS coordinates, audio snippets, and alerts to verified emergency contacts and local authorities.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Geolocation API</span>
+                <span class="tech-pill">Emergency Dispatch</span>
+                <span class="tech-pill">IoT Protocol</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="women-safety">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View Code on GitHub">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Digital Payment Fraud Detection (Matching ML Dataset) -->
+          <article class="project-card glass-panel" data-category="aiml analytics">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-fraud">
+                <i class="fa-solid fa-shield-virus thumb-icon"></i>
+                <div class="thumb-badge">FinTech ML</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 2026</span>
+                <span class="badge-status">Predictive Pipeline</span>
+              </div>
+              <h3 class="project-title">Digital Payment Fraud Detection Engine</h3>
+              <p class="project-summary">
+                Machine learning classification model trained on digital payment transactions to identify fraudulent patterns, high-risk anomalies, and unauthorized transfers with low false positive rates.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">XGBoost / Random Forest</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Streamlit</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="fraud-detection">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View Code on GitHub">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Power BI Enterprise Analytics Dashboard -->
+          <article class="project-card glass-panel" data-category="analytics">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder bg-gradient-bi">
+                <i class="fa-solid fa-chart-pie thumb-icon"></i>
+                <div class="thumb-badge">BI Dashboard</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <span class="project-date"><i class="fa-regular fa-calendar"></i> 2025</span>
+                <span class="badge-status">Analytics</span>
+              </div>
+              <h3 class="project-title">Executive Business Intelligence Dashboard</h3>
+              <p class="project-summary">
+                Comprehensive Power BI and Excel analytical dashboard tracking revenue growth, employee performance KPIs, attrition metrics, and sales forecasting with interactive drill-down filters.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">DAX Queries</span>
+                <span class="tech-pill">Microsoft Excel</span>
+                <span class="tech-pill">SQL Data Modeling</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="bi-dashboard">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive AI Playground / Live Simulation Section -->
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-flask-vial"></i> Interactive AI Showcase</span>
+          <h2 class="section-title">Live Model Playground</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Experience Deepak's Machine Learning and AI projects right inside your browser! Adjust parameters and see real-time predictive modeling.
+          </p>
+        </div>
+
+        <!-- Playground Tabs -->
+        <div class="playground-wrapper glass-panel">
+          
+          <div class="playground-nav">
+            <button class="playground-tab-btn active" data-demo="salary-demo">
+              <i class="fa-solid fa-calculator"></i> AI Salary Predictor (IBM Model)
+            </button>
+            <button class="playground-tab-btn" data-demo="medical-demo">
+              <i class="fa-solid fa-stethoscope"></i> AI Medical Summarizer (RAG Demo)
+            </button>
+          </div>
+
+          <!-- Demo 1: Interactive AI Salary Predictor (Simulating his IBM project) -->
+          <div class="playground-content active" id="salary-demo">
+            <div class="demo-grid">
+              
+              <div class="demo-inputs">
+                <div class="demo-header">
+                  <h3><i class="fa-solid fa-sliders"></i> Model Input Parameters</h3>
+                  <p>Based on Deepak's regression model trained during the IBM AI internship.</p>
+                </div>
+
+                <!-- Sliders & Inputs -->
+                <div class="form-group">
+                  <div class="slider-label-row">
+                    <label for="exp-slider">Years of Professional Experience:</label>
+                    <span class="slider-val" id="exp-val">2.5 Years</span>
+                  </div>
+                  <input type="range" id="exp-slider" min="0" max="15" step="0.5" value="2.5" class="custom-range" />
+                </div>
+
+                <div class="form-group">
+                  <label for="education-select">Education Tier:</label>
+                  <select id="education-select" class="custom-select">
+                    <option value="btech">B.Tech / Bachelor's in CS / AI (Specialized)</option>
+                    <option value="mtech">M.Tech / Master's Degree</option>
+                    <option value="bca">General Bachelor's Degree</option>
+                    <option value="phd">Ph.D. / Research Fellowship</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="role-select">Target Industry Role:</label>
+                  <select id="role-select" class="custom-select">
+                    <option value="aiml">AI / Machine Learning Engineer</option>
+                    <option value="data-analyst">Data Analyst / BI Specialist</option>
+                    <option value="data-scientist">Data Scientist</option>
+                    <option value="software-dev">Python / Software Developer</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="location-select">Job Location / Tier:</label>
+                  <select id="location-select" class="custom-select">
+                    <option value="tier1">Tier 1 Metro (Bengaluru, Hyderabad, NCR, Pune)</option>
+                    <option value="tier2">Tier 2 Hub (Prayagraj, Lucknow, Jaipur, etc.)</option>
+                    <option value="remote">Remote (Global / Pan-India)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <div class="slider-label-row">
+                    <label for="skill-count">Proficiency / Verified Tech Skills:</label>
+                    <span class="slider-val" id="skills-val">6 Core Skills</span>
+                  </div>
+                  <input type="range" id="skill-count" min="2" max="12" step="1" value="6" class="custom-range" />
+                </div>
+              </div>
+
+              <!-- Output Card -->
+              <div class="demo-output">
+                <div class="output-card">
+                  <div class="output-header">
+                    <span class="pulse-indicator"></span>
+                    <span>AI Model Prediction Output</span>
+                  </div>
+                  
+                  <div class="predicted-salary-box">
+                    <span class="salary-caption">Estimated Annual Compensation</span>
+                    <div class="salary-amount" id="salary-display">₹ 9,50,000</div>
+                    <span class="salary-range" id="salary-range-display">Range: ₹8,20,000 - ₹10,80,000 / year</span>
+                  </div>
+
+                  <div class="prediction-breakdown">
+                    <h4>Feature Attribution Breakdown:</h4>
+                    <div class="breakdown-bar">
+                      <div class="bar-segment seg-base" style="width: 35%;" title="Base Tier (35%)"></div>
+                      <div class="bar-segment seg-exp" style="width: 30%;" title="Experience Factor (30%)"></div>
+                      <div class="bar-segment seg-skills" style="width: 25%;" title="Skill Stack (25%)"></div>
+                      <div class="bar-segment seg-geo" style="width: 10%;" title="Location Adjustment (10%)"></div>
+                    </div>
+                    <div class="breakdown-legend">
+                      <span><span class="legend-color seg-base"></span> Education</span>
+                      <span><span class="legend-color seg-exp"></span> Experience</span>
+                      <span><span class="legend-color seg-skills"></span> Skills</span>
+                      <span><span class="legend-color seg-geo"></span> Location</span>
+                    </div>
+                  </div>
+
+                  <div class="model-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Trained with Scikit-learn regression algorithms (Linear, Random Forest Regressor) with cross-validation during IBM internship.</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Demo 2: Interactive AI Medical Summarizer (Simulating his RAG project) -->
+          <div class="playground-content" id="medical-demo">
+            <div class="demo-grid">
+              
+              <div class="demo-inputs">
+                <div class="demo-header">
+                  <h3><i class="fa-solid fa-file-waveform"></i> Medical Report Analyzer (RAG)</h3>
+                  <p>Select a sample diagnostic report to test automated clinical synthesis and question answering.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="sample-report-select">Select Diagnostic Report Sample:</label>
+                  <select id="sample-report-select" class="custom-select">
+                    <option value="blood-panel">Comprehensive Blood & Metabolic Panel (CBC + Lipid)</option>
+                    <option value="thyroid">Thyroid Function Test (TSH, Free T3, Free T4)</option>
+                    <option value="cardiac">Cardiovascular Biomarker & ECG Summary</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="medical-query">Ask Question about this Report:</label>
+                  <input type="text" id="medical-query" class="custom-input" value="Are there any abnormal values I should discuss with a doctor?" />
+                </div>
+
+                <button class="btn btn-primary btn-full" id="run-medical-ai-btn">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Analyze with LangChain & RAG</span>
+                </button>
+              </div>
+
+              <!-- Output Card -->
+              <div class="demo-output">
+                <div class="output-card medical-output-box">
+                  <div class="output-header">
+                    <span class="badge-accent"><i class="fa-solid fa-brain"></i> RAG Pipeline Result</span>
+                    <span class="rag-latency"><i class="fa-solid fa-clock"></i> 240ms</span>
+                  </div>
+
+                  <div class="medical-summary-content" id="medical-summary-output">
+                    <h4><i class="fa-solid fa-heart-pulse"></i> Clinical Summary for Patient:</h4>
+                    <p><strong>Status:</strong> <span class="tag-alert-mild">Mild Borderline High</span></p>
+                    <ul class="medical-findings-list">
+                      <li><strong>Hemoglobin:</strong> 14.2 g/dL (Normal: 13.5 - 17.5 g/dL) &check;</li>
+                      <li><strong>Total Cholesterol:</strong> 215 mg/dL (Desirable: &lt; 200 mg/dL) &excl; Borderline Elevated</li>
+                      <li><strong>Fasting Blood Glucose:</strong> 92 mg/dL (Normal: 70 - 99 mg/dL) &check;</li>
+                    </ul>
+                    <div class="patient-friendly-advice">
+                      <strong>AI Explanation:</strong> Your blood sugar and hemoglobin levels are completely healthy. Your total cholesterol is marginally above the standard threshold; consider discussing dietary adjustments with your physician.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-user-graduate"></i> Academic Pedigree</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Formal engineering education and professional credentials from leading technology institutions.
+          </p>
+        </div>
+
+        <div class="edu-cert-grid">
+          
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-heading">
+              <i class="fa-solid fa-graduation-cap"></i> Academic Qualifications
+            </h3>
+
+            <div class="edu-cards-list">
+              
+              <!-- Degree 1: B.Tech -->
+              <div class="edu-card glass-panel featured-edu">
+                <div class="edu-badge-corner">Current</div>
+                <div class="edu-header">
+                  <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+                  <div>
+                    <span class="edu-duration"><i class="fa-regular fa-calendar"></i> 2023 – 2027</span>
+                    <h4 class="edu-degree">B.Tech in Computer Science & Engineering</h4>
+                    <span class="edu-spec">Specialization in Artificial Intelligence & Machine Learning</span>
+                  </div>
+                </div>
+                <p class="edu-institution">United College of Engineering and Research (UCER), Prayagraj</p>
+                <div class="edu-footer">
+                  <span class="grade-pill"><i class="fa-solid fa-award"></i> CGPA: <strong>7.3</strong></span>
+                  <span class="location-pill"><i class="fa-solid fa-location-dot"></i> Prayagraj, UP</span>
+                </div>
+              </div>
+
+              <!-- Degree 2: Class XII CBSE -->
+              <div class="edu-card glass-panel">
+                <div class="edu-header">
+                  <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                  <div>
+                    <span class="edu-duration"><i class="fa-regular fa-calendar"></i> 2023</span>
+                    <h4 class="edu-degree">Senior Secondary School Examination (Class XII, CBSE)</h4>
+                    <span class="edu-spec">Science Stream (Physics, Chemistry, Mathematics)</span>
+                  </div>
+                </div>
+                <p class="edu-institution">RRB Public School, Prayagraj</p>
+                <div class="edu-footer">
+                  <span class="grade-pill"><i class="fa-solid fa-percent"></i> Percentage: <strong>67%</strong></span>
+                  <span class="location-pill"><i class="fa-solid fa-location-dot"></i> Prayagraj, UP</span>
+                </div>
+              </div>
+
+              <!-- Degree 3: Class X CBSE -->
+              <div class="edu-card glass-panel">
+                <div class="edu-header">
+                  <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+                  <div>
+                    <span class="edu-duration"><i class="fa-regular fa-calendar"></i> 2021</span>
+                    <h4 class="edu-degree">Secondary School Examination (Class X, CBSE)</h4>
+                    <span class="edu-spec">General High School Curriculum</span>
+                  </div>
+                </div>
+                <p class="edu-institution">ADSS School, Mirzapur</p>
+                <div class="edu-footer">
+                  <span class="grade-pill"><i class="fa-solid fa-percent"></i> Percentage: <strong>73.4%</strong></span>
+                  <span class="location-pill"><i class="fa-solid fa-location-dot"></i> Mirzapur, UP</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-heading">
+              <i class="fa-solid fa-certificate"></i> Verified Certifications
+            </h3>
+
+            <div class="cert-cards-list">
+              
+              <!-- Cert 1: Oracle -->
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box bg-oracle">
+                  <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div class="cert-details">
+                  <span class="cert-date"><i class="fa-regular fa-calendar"></i> December 2025</span>
+                  <h4 class="cert-name">Oracle Cloud Infrastructure AI Foundation Associate</h4>
+                  <p class="cert-issuer">Oracle Corporation</p>
+                  <p class="cert-desc">Foundational mastery of OCI AI Services, Machine Learning principles, Large Language Models, Generative AI, and cloud AI infrastructure.</p>
+                  <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> Industry Verified</span>
+                </div>
+              </div>
+
+              <!-- Cert 2: IBM PBEL -->
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box bg-ibm">
+                  <i class="fa-brands fa-ibm"></i>
+                </div>
+                <div class="cert-details">
+                  <span class="cert-date"><i class="fa-regular fa-calendar"></i> August 2025</span>
+                  <h4 class="cert-name">PBEL Virtual Internship via FSP – Artificial Intelligence (AI)</h4>
+                  <p class="cert-issuer">IBM / Edunet Foundation</p>
+                  <p class="cert-desc">6-week intensive project-based experiential learning covering AI pipeline engineering, supervised modeling, and ethical AI deployment.</p>
+                  <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> 6 Weeks Equivalent</span>
+                </div>
+              </div>
+
+              <!-- Cert 3: HP Life -->
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box bg-hp">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="cert-details">
+                  <span class="cert-date"><i class="fa-regular fa-calendar"></i> December 2024</span>
+                  <h4 class="cert-name">HP Life – Data Science & Analytics</h4>
+                  <p class="cert-issuer">HP LIFE (Hewlett Packard Enterprise)</p>
+                  <p class="cert-desc">Practical frameworks for exploratory data analysis, business metric modeling, predictive insight generation, and data-driven strategy.</p>
+                  <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+                </div>
+              </div>
+
+              <!-- Cert 4: Core Java UCER -->
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box bg-java">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="cert-details">
+                  <span class="cert-date"><i class="fa-regular fa-calendar"></i> August 2024</span>
+                  <h4 class="cert-name">Core JAVA Certification</h4>
+                  <p class="cert-issuer">United College of Engineering and Research (UCER), Prayagraj</p>
+                  <p class="cert-desc">Comprehensive training in Java OOP concepts, multithreading, exception handling, data structures, and enterprise backend fundamentals.</p>
+                  <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> Verified Institutional</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">
+            Interested in hiring me for an AI/ML or Data Analyst role, discussing project collaboration, or reviewing my portfolio? Send me a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            
+            <div class="contact-channel-card glass-panel">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-content">
+                <span class="channel-label">Email Address</span>
+                <a href="mailto:deepakkumarhalia@gmail.com" class="channel-val">deepakkumarhalia@gmail.com</a>
+                <span class="channel-sub">Quickest response within 24 hours</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-card glass-panel">
+              <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="channel-content">
+                <span class="channel-label">Direct Phone</span>
+                <a href="tel:+919793789322" class="channel-val">+91-9793789322</a>
+                <span class="channel-sub">Available Mon - Sat (IST)</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-card glass-panel">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-content">
+                <span class="channel-label">Current Location</span>
+                <span class="channel-val">Prayagraj / Mirzapur, Uttar Pradesh, India</span>
+                <span class="channel-sub">Open to on-site, hybrid, and remote roles</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-card glass-panel">
+              <div class="channel-icon"><i class="fa-solid fa-share-nodes"></i></div>
+              <div class="channel-content">
+                <span class="channel-label">Social & Developer Profiles</span>
+                <div class="contact-social-icons">
+                  <a href="https://linkedin.com/in/deepakmishra" target="_blank" rel="noopener noreferrer" class="social-circle" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" class="social-circle" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://leetcode.com/Mishradeepak9322" target="_blank" rel="noopener noreferrer" class="social-circle" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-download-banner glass-panel">
+              <div class="banner-icon"><i class="fa-solid fa-file-pdf"></i></div>
+              <div>
+                <h4>Looking for my complete resume?</h4>
+                <p>Download the ATS-friendly PDF copy of my latest resume.</p>
+              </div>
+              <a href="Deepak_Kumar_Mishra_Resume.pdf" download="Deepak_Kumar_Mishra_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper glass-panel">
+            <h3 class="form-title">
+              <i class="fa-solid fa-message"></i> Send a Direct Message
+            </h3>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Alex Johnson" required />
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email Address <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. alex@company.com" required />
+                  <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Job Opportunity / Project Inquiry" required />
+                <span class="error-msg" id="subject-error">Please provide a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" class="form-control" placeholder="Hi Deepak, we came across your AI/ML portfolio and would love to discuss a Data Analyst / AI Engineer opportunity with our team..." required></textarea>
+                <span class="error-msg" id="message-error">Please type your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full submit-btn" id="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-status" id="form-status" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Deepak Kumar Mishra</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            AI & Machine Learning Undergraduate • Data Analyst • Passionate Problem Solver
+          </p>
+        </div>
+
+        <div class="footer-quick-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#playground">AI Lab</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/deepakmishra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Deepak123Mishra" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://leetcode.com/Mishradeepak9322" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+          <a href="mailto:deepakkumarhalia@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Deepak Kumar Mishra. Built with modern HTML5, CSS3 & JavaScript.</p>
+        <p class="footer-subtext">United College of Engineering and Research (UCER), Prayagraj</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal Dialogue -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamic project details injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
